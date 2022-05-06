@@ -3638,7 +3638,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 109,
+					"line": 197,
 					"character": 13
 				}
 			],
@@ -3713,7 +3713,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 35,
+					"line": 64,
 					"character": 13
 				}
 			],
@@ -3724,6 +3724,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Adds two vectors",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 161,
@@ -3731,6 +3735,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3745,6 +3752,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3759,6 +3767,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3787,7 +3796,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 56,
+					"line": 106,
 					"character": 13
 				}
 			],
@@ -3798,6 +3807,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Copies a vector to a different one",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 176,
@@ -3805,6 +3818,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3819,6 +3835,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "from vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3847,7 +3866,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 49,
+					"line": 93,
 					"character": 13
 				}
 			],
@@ -3858,6 +3877,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Calculates the cross product",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 171,
@@ -3865,6 +3888,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3879,6 +3905,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3893,6 +3920,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3921,7 +3949,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 101,
+					"line": 182,
 					"character": 13
 				}
 			],
@@ -3932,6 +3960,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Returns the distance between two vectors",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 198,
@@ -3939,6 +3971,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3953,6 +3986,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -3978,7 +4012,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 1,
+					"line": 7,
 					"character": 13
 				}
 			],
@@ -3989,6 +4023,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Returns the dot product of two vectors",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 146,
@@ -3996,6 +4034,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4010,6 +4049,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4035,7 +4075,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 21,
+					"line": 43,
 					"character": 13
 				}
 			],
@@ -4046,6 +4086,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Calculates the normal of a plane defined by three points",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 155,
@@ -4053,6 +4097,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4067,6 +4114,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4081,6 +4129,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4095,6 +4144,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4123,7 +4173,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 63,
+					"line": 118,
 					"character": 13
 				}
 			],
@@ -4134,6 +4184,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "returns the length of a vector",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 180,
@@ -4141,6 +4195,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4166,7 +4221,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 86,
+					"line": 161,
 					"character": 13
 				}
 			],
@@ -4177,6 +4232,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Normalizes a vector",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 194,
@@ -4184,6 +4243,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4198,6 +4260,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "vector to normalize"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4226,7 +4291,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 5,
+					"line": 18,
 					"character": 13
 				}
 			],
@@ -4237,6 +4302,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Returns the distance from a point to a line segment",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 150,
@@ -4244,6 +4313,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "point"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4258,6 +4330,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "line end point"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4272,6 +4347,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "line end point"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4297,7 +4375,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 67,
+					"line": 129,
 					"character": 13
 				}
 			],
@@ -4308,6 +4386,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Scales a vector by a number",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 183,
@@ -4315,6 +4397,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4329,6 +4414,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "vector to scale"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4343,6 +4431,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "amount to scale"
+							},
 							"type": {
 								"type": "intrinsic",
 								"name": "number"
@@ -4368,7 +4459,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 74,
+					"line": 143,
 					"character": 13
 				}
 			],
@@ -4379,6 +4470,9 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Scales a vector by an amount, and adds a constant to all components"
+					},
 					"parameters": [
 						{
 							"id": 188,
@@ -4386,6 +4480,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4414,6 +4511,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "amount to scale"
+							},
 							"type": {
 								"type": "intrinsic",
 								"name": "number"
@@ -4425,6 +4525,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "constant to add\n"
+							},
 							"type": {
 								"type": "intrinsic",
 								"name": "number"
@@ -4450,7 +4553,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 104,
+					"line": 192,
 					"character": 13
 				}
 			],
@@ -4461,6 +4564,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Returns the squared distance between two vectors",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 202,
@@ -4468,6 +4575,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4482,6 +4590,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4507,7 +4616,7 @@
 			"sources": [
 				{
 					"fileName": "util.ts",
-					"line": 42,
+					"line": 78,
 					"character": 13
 				}
 			],
@@ -4518,6 +4627,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Subtracts two vectors",
+						"returns": "target vector\n"
+					},
 					"parameters": [
 						{
 							"id": 166,
@@ -4525,6 +4638,9 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {
+								"shortText": "target vector"
+							},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4539,6 +4655,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4553,6 +4670,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
