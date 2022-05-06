@@ -19,7 +19,7 @@ import Vertex from "./vertex";
  */
 export class Face {
     /**
-     * A list of normals for each face.
+     * normal of the face.
      */
     public normal: number[];
 
@@ -95,7 +95,7 @@ export class Face {
     }
 
     /**
-     * Computes the normals for the face.
+     * Computes the normal for the face.
      */
     computeNormal() {
         const e0 = this.edge;
@@ -130,7 +130,7 @@ export class Face {
     }
 
     /**
-     * Computes the normals for the face using the minimum area.
+     * Computes the normal for the face using the minimum area.
      * @param minArea The minimum area of the face.
      */
     computeNormalMinArea(minArea: number) {
@@ -185,7 +185,7 @@ export class Face {
     }
 
     /**
-     * Computes the normals and the centroid for the face.
+     * Computes the normal and the centroid for the face.
      * @param minArea The minimum area of the face.
      */
     computeNormalAndCentroid(minArea?: number) {
