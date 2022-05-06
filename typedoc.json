@@ -355,7 +355,7 @@
 						"isPublic": true
 					},
 					"comment": {
-						"shortText": "A list of normals for each face."
+						"shortText": "normal of the face."
 					},
 					"sources": [
 						{
@@ -522,7 +522,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Computes the normals for the face."
+								"shortText": "Computes the normal for the face."
 							},
 							"type": {
 								"type": "intrinsic",
@@ -552,7 +552,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Computes the normals and the centroid for the face."
+								"shortText": "Computes the normal and the centroid for the face."
 							},
 							"parameters": [
 								{
@@ -600,7 +600,7 @@
 							"kindString": "Call signature",
 							"flags": {},
 							"comment": {
-								"shortText": "Computes the normals for the face using the minimum area."
+								"shortText": "Computes the normal for the face using the minimum area."
 							},
 							"parameters": [
 								{
