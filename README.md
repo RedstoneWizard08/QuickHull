@@ -31,7 +31,7 @@ To begin using QuickHull, you first need to import and instantiate it. This can 
 import QuickHull from "quickhull-ts";
 
 // CommonJS
-const QuickHull = require("QuickHull");
+const QuickHull = require("quickhull-ts");
 
 // Create the hull
 const hull = QuickHull.createHull(points);
