@@ -13,9 +13,7 @@ jobs:
               uses: actions/setup-node@v1
               with:
                 node-version: 16.x
-            
-            - name: Install Yarn 🔧
-              uses: actions/setup-yarn@v1
+                cache: 'yarn'
 
             - name: Install 📦
               run: |
