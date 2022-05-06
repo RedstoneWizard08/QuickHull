@@ -1,0 +1,11 @@
+{
+    "entryPoints": [
+        "src/index.ts"
+    ],
+    "out": "docs",
+    "json": "docs/typedoc.json",
+    "pretty": true,
+    "name": "QuickHull",
+    "githubPages": true,
+    "hideGenerator": true
+}
