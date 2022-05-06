@@ -1,6 +1,17 @@
 import { FaceState } from "./enums";
 import HalfEdge from "./halfedge";
-import { add, copy, cross, debug, dot, length, normalize, scale, scaleAndAdd, subtract } from "./util";
+import {
+    add,
+    copy,
+    cross,
+    debug,
+    dot,
+    length,
+    normalize,
+    scale,
+    scaleAndAdd,
+    subtract,
+} from "./util";
 import Vertex from "./vertex";
 
 export class Face {

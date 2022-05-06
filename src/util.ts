@@ -105,6 +105,7 @@ export const squaredDistance = (v1: number[], v2: number[]) => {
     return (v1[0] - v2[0]) ** 2 + (v1[1] - v2[1]) ** 2 + (v1[2] - v2[2]) ** 2;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const debug = (...text: any) => {
     if (debug.enabled) console.log(...text);
 };

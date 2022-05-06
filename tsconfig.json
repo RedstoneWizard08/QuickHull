@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "lib": ["es2021", "dom"],
+        "outDir": "dist",
+        "types": ["node"],
+        "baseUrl": ".",
+        "strict": true,
+        "resolveJsonModule": true,
+        "alwaysStrict": true,
+        "strictNullChecks": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "target": "es2021",
+        "declaration": true,
+        "allowJs": true,
+        "checkJs": true,
+        "importHelpers": true
+    },
+    "exclude": ["node_modules", "dist"]
+}

@@ -2,6 +2,7 @@ import { FaceState, MergeType } from "./enums";
 import Face from "./face";
 import HalfEdge from "./halfedge";
 import { debug, dot, getPlaneNormal, pointLineDistance } from "./util";
+import { Vector3, vectorArrayToNumberArray } from "./vector";
 import Vertex from "./vertex";
 import VertexList from "./vertexlist";
 
@@ -621,7 +622,7 @@ export class QuickHull {
     /**
      * Computes the distance from `edge` opposite face's centroid to
      * `edge.face`
-     * 
+     *
      * @return
      * - A positive number when the centroid of the opposite face is above the
      *   face i.e. when the faces are concave
@@ -811,7 +812,10 @@ export class QuickHull {
             const face = this.newFaces[i];
             if (face.mark === FaceState.VISIBLE) {
                 while (
-                    this.doAdjacentMerge(face, MergeType.MERGE_NON_CONVEX_WRT_LARGER_FACE)
+                    this.doAdjacentMerge(
+                        face,
+                        MergeType.MERGE_NON_CONVEX_WRT_LARGER_FACE
+                    )
                 ) {
                     void 0;
                 }
@@ -856,7 +860,8 @@ export class QuickHull {
         this.reindexFaceAndVertices();
     }
 
-    static createHull(points: number[][]) {
+    static createHull(_points: number[][] | Vector3[]) {
+        let points = vectorArrayToNumberArray(_points);
         points = points.slice();
         for (let pti = 0; pti < points.length; pti++) {
             const pt = points[pti];
