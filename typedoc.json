@@ -4699,7 +4699,7 @@
 			"sources": [
 				{
 					"fileName": "vector.ts",
-					"line": 13,
+					"line": 23,
 					"character": 13
 				}
 			],
@@ -4710,13 +4710,18 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Vector array to number array conversion",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 220,
-							"name": "vector",
+							"name": "vectorArray",
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "array",
 								"elementType": {
@@ -4761,7 +4766,7 @@
 			"sources": [
 				{
 					"fileName": "vector.ts",
-					"line": 7,
+					"line": 12,
 					"character": 13
 				}
 			],
@@ -4772,6 +4777,10 @@
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
+					"comment": {
+						"shortText": "Converts a vector to a number array",
+						"returns": "\n"
+					},
 					"parameters": [
 						{
 							"id": 217,
@@ -4779,6 +4788,7 @@
 							"kind": 32768,
 							"kindString": "Parameter",
 							"flags": {},
+							"comment": {},
 							"type": {
 								"type": "reference",
 								"id": 211,
