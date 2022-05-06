@@ -14,16 +14,53 @@ import {
 } from "./util";
 import Vertex from "./vertex";
 
+/**
+ * A face of the convex hull.
+ */
 export class Face {
+    /**
+     * A list of normals for each face.
+     */
     public normal: number[];
+
+    /**
+     * The centroid of the face.
+     */
     public centroid: number[];
+
+    /**
+     * The offset of the face from the origin.
+     */
     public offset: number;
+
+    /**
+     * The vertex on the outside of the face.
+     */
     public outside: Vertex | null;
+
+    /**
+     * The state the face is in.
+     */
     public mark: number;
+
+    /**
+     * The edge of the face.
+     */
     public edge: HalfEdge | null;
+    
+    /**
+     * The number of vertices in the face.
+     */
     public nVertices: number;
+
+    /**
+     * The area of the face.
+     */
     public area = 0;
 
+    /**
+     * Creates a new face.
+     */
     constructor() {
         this.normal = [];
         this.centroid = [];
@@ -36,6 +73,11 @@ export class Face {
         this.nVertices = 0;
     }
 
+    /**
+     * Gets an edge at the given index.
+     * @param i The index of the edge.
+     * @returns The edge at the given index.
+     */
     getEdge(i: number) {
         if (typeof i !== "number") {
             throw Error("requires a number");
@@ -52,6 +94,9 @@ export class Face {
         return it;
     }
 
+    /**
+     * Computes the normals for the face.
+     */
     computeNormal() {
         const e0 = this.edge;
         const e1 = e0?.next;
@@ -84,6 +129,10 @@ export class Face {
         this.normal = scale(this.normal, this.normal, 1 / this.area);
     }
 
+    /**
+     * Computes the normals for the face using the minimum area.
+     * @param minArea The minimum area of the face.
+     */
     computeNormalMinArea(minArea: number) {
         this.computeNormal();
         if (this.area < minArea) {
@@ -122,6 +171,9 @@ export class Face {
         }
     }
 
+    /**
+     * Computes the centroid of the face.
+     */
     computeCentroid() {
         this.centroid = [0, 0, 0];
         let edge = this.edge;
@@ -132,6 +184,10 @@ export class Face {
         scale(this.centroid, this.centroid, 1 / this.nVertices);
     }
 
+    /**
+     * Computes the normals and the centroid for the face.
+     * @param minArea The minimum area of the face.
+     */
     computeNormalAndCentroid(minArea?: number) {
         if (typeof minArea !== "undefined") {
             this.computeNormalMinArea(minArea);
@@ -142,6 +198,11 @@ export class Face {
         this.offset = dot(this.normal, this.centroid);
     }
 
+    /**
+     * Calculates the distance from the face to a given point.
+     * @param point The point to check.
+     * @returns The distance from the face to the point.
+     */
     distanceToPlane(point: number[]) {
         return dot(this.normal, point) - this.offset;
     }
@@ -151,8 +212,8 @@ export class Face {
      *
      * Connects two edges assuming that prev.head().point === next.tail().point
      *
-     * @param {HalfEdge} prev
-     * @param {HalfEdge} next
+     * @param prev The previous edge.
+     * @param next The next edge.
      */
     private connectHalfEdges(prev: HalfEdge, next: HalfEdge) {
         let discardedFace;
@@ -256,6 +317,12 @@ export class Face {
         return discardedFace;
     }
 
+    /**
+     * Merges adjacent faces.
+     * @param adjacentEdge The edge to start from.
+     * @param discardedFaces The faces that are discarded.
+     * @returns The face that is left after merging.
+     */
     mergeAdjacentFaces(
         adjacentEdge: HalfEdge,
         discardedFaces: (Face | null)[] = []
@@ -342,6 +409,10 @@ export class Face {
         return discardedFaces;
     }
 
+    /**
+     * Collects the indices of the face.
+     * @returns The indices of the face.
+     */
     collectIndices() {
         const indices = [];
         let edge = this.edge;
@@ -352,6 +423,14 @@ export class Face {
         return indices;
     }
 
+    /**
+     * Creates a triangle from the face.
+     * @param v0 The first vertex.
+     * @param v1 The second vertex.
+     * @param v2 The third vertex.
+     * @param minArea The minimum area of the triangle.
+     * @returns The triangle.
+     */
     static createTriangle(v0: Vertex, v1: Vertex, v2: Vertex, minArea = 0) {
         const face = new Face();
         const e0 = new HalfEdge(v0, face);

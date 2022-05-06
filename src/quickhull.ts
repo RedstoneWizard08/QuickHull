@@ -1,4 +1,4 @@
-//quickhull algorithm: https://github.com/mauriciopoppe/quickhull3d/blob/master/lib/QuickHull.js
+// QuickHull algorithm: https://github.com/mauriciopoppe/quickhull3d/blob/master/lib/QuickHull.js
 
 import { FaceState, MergeType } from "./enums";
 import Face from "./face";
