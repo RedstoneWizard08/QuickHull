@@ -59,7 +59,7 @@ const points = [
 const hull = QuickHull.createHull(points);
 
 // Log the faces to the console
-console.log(hull);
+console.log(hull); // [ [ 0, 1, 5 ], [ 2, 0, 5 ], [ 2, 5, 1 ], [ 2, 1, 0 ] ]
 ```
 
 More documentation coming soon.

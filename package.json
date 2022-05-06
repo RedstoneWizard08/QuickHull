@@ -1,6 +1,6 @@
 {
     "name": "quickhull-ts",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A conversion utility for converting points to a cannon-es body.",
     "main": "dist/index.js",
     "repository": "https://github.com/RedstoneWizard08/QuickHull.git",

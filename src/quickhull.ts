@@ -283,7 +283,7 @@ export class QuickHull {
         v1 = max[indexMax];
 
         // the next vertex is the one farthest to the line formed by `v0` and `v1`
-        maxDistance = 0;
+        maxDistance = -1;
         for (i = 0; i < this.vertices.length; i += 1) {
             const vertex = this.vertices[i];
             if (vertex !== v0 && vertex !== v1) {
@@ -315,8 +315,6 @@ export class QuickHull {
                 }
             }
         }
-
-        // TODO: Create a fail-safe of v2 or v3 aren't defined.
 
         // initial simplex
         // Taken from http://everything2.com/title/How+to+paint+a+tetrahedron
