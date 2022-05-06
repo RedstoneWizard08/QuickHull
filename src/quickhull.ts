@@ -316,6 +316,8 @@ export class QuickHull {
             }
         }
 
+        // TODO: Create a fail-safe of v2 or v3 aren't defined.
+
         // initial simplex
         // Taken from http://everything2.com/title/How+to+paint+a+tetrahedron
         //
@@ -860,7 +862,12 @@ export class QuickHull {
         this.reindexFaceAndVertices();
     }
 
-    static createHull(_points: number[][] | Vector3[]) {
+    /**
+     * Creates a new array of faces from an array of points.
+     * @param _points The array of points to create the hull from.
+     * @returns An array of faces.
+     */
+    static createHull(_points: (number[] | Vector3)[]) {
         let points = vectorArrayToNumberArray(_points);
         points = points.slice();
         for (let pti = 0; pti < points.length; pti++) {

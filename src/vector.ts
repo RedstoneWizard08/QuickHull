@@ -10,7 +10,7 @@ export const vectorToNumber = (vector: Vector3) => [
     vector.z,
 ];
 
-export const vectorArrayToNumberArray = (vector: Vector3[] | number[][]) => {
+export const vectorArrayToNumberArray = (vector: (Vector3 | number[])[]) => {
     const vectors: number[][] = [];
     vector.forEach((v) => {
         if ("x" in v) {

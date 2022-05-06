@@ -1,6 +1,6 @@
 {
-    "name": "quickhull",
-    "version": "1.0.0",
+    "name": "quickhull-ts",
+    "version": "1.0.1",
     "description": "A conversion utility for converting points to a cannon-es body.",
     "main": "dist/index.js",
     "repository": "https://github.com/RedstoneWizard08/QuickHull.git",
@@ -19,7 +19,8 @@
     "scripts": {
         "build": "tsc -p .",
         "fmt": "prettier --write .",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "prepublish": "tsc -p ."
     },
     "dependencies": {
         "tslib": "^2.4.0"
